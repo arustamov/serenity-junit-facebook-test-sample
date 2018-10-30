@@ -5,20 +5,25 @@ import org.apache.commons.lang3.builder.ToStringStyle;
 
 public class Credentials {
 
-    private String username;
+    private String email;
     private String password;
 
-    public Credentials(String username, String password) {
-        this.username = username;
+    public Credentials(String email, String password) {
+        this.email = email;
         this.password = password;
     }
 
-    public String username() {
-        return username;
+    public String email() {
+        return email;
     }
 
     public String password() {
         return password;
+    }
+
+    public String emailToUsername() {
+        Integer atIndex = email.indexOf("@");
+        return email.substring(0, atIndex);
     }
 
     public String toString() {

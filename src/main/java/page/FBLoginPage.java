@@ -16,9 +16,9 @@ public class FBLoginPage extends PageObject {
     private static final String PASSWORD_INPUT_ID = "pass";
     private static final String LOGIN_BUTTON_ID = "loginbutton";
 
-    public FBLoginPage typeUsernameInput(String username) {
+    public FBLoginPage typeEmailInput(String email) {
         element(By.id(EMAIL_INPUT_ID))
-                .type(username);
+                .type(email);
         return this;
     }
 

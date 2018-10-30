@@ -16,6 +16,7 @@
         <webdriver.manager.version>2.2.5</webdriver.manager.version>
         <assertj.version>3.11.1</assertj.version>
         <slf4j.version>1.7.25</slf4j.version>
+        <javafaker.version>0.16</javafaker.version>
 
         <maven.compiler.plugin>3.2</maven.compiler.plugin>
         <maven.surfire.plugin>2.20.1</maven.surfire.plugin>
@@ -53,6 +54,11 @@
             <groupId>org.assertj</groupId>
             <artifactId>assertj-core</artifactId>
             <version>${assertj.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.github.javafaker</groupId>
+            <artifactId>javafaker</artifactId>
+            <version>${javafaker.version}</version>
         </dependency>
     </dependencies>
     <build>

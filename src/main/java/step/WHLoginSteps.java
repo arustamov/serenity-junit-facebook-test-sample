@@ -2,25 +2,25 @@ package step;
 
 import entity.Credentials;
 import net.thucydides.core.annotations.Step;
-import page.FBHomePage;
-import page.FBLoginPage;
+import page.WHLoginPage;
+import page.WHProfilePage;
 
-public class FBLoginSteps {
+public class WHLoginSteps {
 
-    private FBLoginPage loginPage;
+    private WHLoginPage loginPage;
 
     @Step
-    public FBLoginSteps openLoginPage() {
+    public WHLoginSteps openLoginPage() {
         loginPage.open();
         return this;
     }
 
     @Step
-    public FBLoginSteps login(Credentials credentials) {
+    public WHLoginSteps login(Credentials credentials) {
         loginPage.typeEmailInput(credentials.email())
                 .typePasswordInput(credentials.password())
                 .clickLoginButton()
-                .switchToPage(FBHomePage.class)
+                .switchToPage(WHProfilePage.class)
                 .waitForPageLoaded();
         return this;
     }
