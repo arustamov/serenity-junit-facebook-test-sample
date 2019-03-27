@@ -1,6 +1,6 @@
 package driver;
 
-import io.github.bonigarcia.wdm.ChromeDriverManager;
+import io.github.bonigarcia.wdm.WebDriverManager;
 import net.thucydides.core.webdriver.DriverSource;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -10,7 +10,7 @@ public class DownloadableChromeDriverSource implements DriverSource {
 
     @Override
     public WebDriver newDriver() {
-        ChromeDriverManager.getInstance().setup();
+        WebDriverManager.chromedriver().setup();
 
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--disable-notifications");

@@ -13,7 +13,7 @@
 
         <serenity.version>2.0.11</serenity.version>
         <junit.version>4.12</junit.version>
-        <webdriver.manager.version>2.2.5</webdriver.manager.version>
+        <webdriver.manager.version>3.3.0</webdriver.manager.version>
         <assertj.version>3.11.1</assertj.version>
         <slf4j.version>1.7.25</slf4j.version>
 
