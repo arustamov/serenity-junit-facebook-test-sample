@@ -1,5 +1,6 @@
 # Serenity BDD Facebook web automation demo project with WebdriverManager
 
+![](https://github.com/arustamov/serenitybdd-facebook-demo/blob/master/serenitybdd-facebook-demo.gif)
 
 How to set up and run:
 1. Install Java 8 and Maven 
@@ -11,5 +12,3 @@ How to set up and run:
 Results are going to be printed out to console
 
 HTML report will be available here - ./serenitybdd-facebook-demo/target/site/serenity/index.html
-
-![](https://github.com/arustamov/serenitybdd-facebook-demo/blob/master/serenitybdd-facebook-demo.gif)
