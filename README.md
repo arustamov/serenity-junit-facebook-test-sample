@@ -11,4 +11,4 @@ How to set up and run:
 
 Results are going to be printed out to console
 
-HTML report will be available here - ./serenitybdd-facebook-demo/target/site/serenity/index.html
+HTML report will be generated in ./target/site/serenity/index.html
